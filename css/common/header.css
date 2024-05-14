@@ -40,7 +40,7 @@ header{
 }
 .top-header ul li{
   float: left;
-  margin-right: 40px;
+  margin-right: 3.5%;
   font-size: 16px;
   line-height: 57px;
   color: #fff;
@@ -96,13 +96,11 @@ nav h1 a img{
 nav .gnb{
   min-width: 870px;
   height: 100px;
-  /* float: left; */
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 100;
   transform: translateX(-50%);
-  /* margin: 0 auto; */
 }
 nav .gnb .depth1_ul::after{
   content: '';
@@ -159,7 +157,7 @@ nav .gnb .depth1_ul .depth1_li:not(:last-child)>a::after{
 /* header - gnb - lnb */
 .gnb::after{
   content: "";
-  width: 100vw;
+  width: 200vw;
   height: 100px;
   position: absolute;
   top: 0;
