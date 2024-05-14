@@ -1,0 +1,218 @@
+footer{
+  background-color: var(--main-darkGreyColor);
+}
+
+/* layout */
+footer .inner-footer{
+  width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+/* footer - top-footer */
+.top-footer{
+  width: 100%;
+  height: 90px;
+  background-color: var(--main-darkGreyColor);
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+.top-footer ul::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.top-footer ul li{
+  float: left;
+  position: relative;
+  padding: 26px 70px 26px 0;
+  line-height: 37px;
+}
+.top-footer ul li a{
+  display: block;
+  float: left;
+  height: 37px;
+  line-height: 37px;
+  color: inherit;
+}
+.top-footer ul li::after{
+  content: "";
+  width: 0;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  background-color: var(--main-redColor);
+  transition: all 0.3s ease-in;
+}
+.top-footer ul li:hover::after{
+  content: "";
+  width: 70%;
+}
+.top-footer ul li:nth-child(1){
+  border-right: 1px solid #eee;
+  font-size: 18px;
+  font-weight: 700;
+}
+.top-footer ul li span{
+  display: block;
+  float: left;
+  width: 37px;
+  height: 37px;
+  margin: 0 20px;
+}
+.top-footer .inner-footer ul li:nth-child(2) span{
+  background: url("../../img/landmark.svg") no-repeat center;
+}
+.top-footer .inner-footer ul li:nth-child(3) span{
+  background: url("../../img/education.svg") no-repeat center;
+}
+.top-footer .inner-footer ul li:nth-child(4) span{
+  background: url("../../img/horn.svg") no-repeat center;
+}
+.top-footer .inner-footer ul li:nth-child(5) span{
+  background: url("../../img/child.svg") no-repeat center;
+}
+.top-footer .inner-footer ul li:nth-child(6) span{
+  background: url("../../img/digital.svg") no-repeat center;
+}
+
+/* bottom-footer */
+.bottom-footer{
+  padding: 50px 10px 30px;
+}
+/* bottom-footer - policy*/
+.bottom-footer ul.policies::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.bottom-footer ul.policies li{
+  float: left;
+  color: #fff;
+}
+.bottom-footer ul.policies li:nth-child(1){
+  color: #ffc11d;
+}
+.bottom-footer ul.policies li a{
+  position: relative;
+  padding-right: 60px;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+}
+.bottom-footer ul.policies li:not(:nth-child(6)) a::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 11px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background-color: #eee;
+}
+/* bottom-footer - address*/
+.bottom-footer .address{
+  margin: 37px 0 26px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.bottom-footer .address::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.bottom-footer .address address{
+  float: left;
+  width: 70%;
+  font-size: 16px;
+  line-height: 80px;
+  text-align: left;
+  color: #eee;
+}
+.bottom-footer .address .sitemap{
+  float: left;
+  width: 30%;
+  position: relative;
+  border-left: 1px solid #eee;
+}
+.bottom-footer .address .sitemap span{
+  display: block;
+  float: left;
+  width: 150px;
+  height: 80px;
+  padding: 0 40px;
+  font-size: 16px;
+  line-height: 80px;
+  text-align: left;
+  color: #eee;
+}
+.bottom-footer .address .sitemap button{
+  float: right;
+  display: block;
+  padding: 25px 40px;
+  cursor: pointer;
+}
+.family-site-off{
+  display: none !important;
+}
+.bottom-footer .address .sitemap button i{
+  font-size: 16px;
+  line-height: 30px;
+  color: #eee;
+}
+.bottom-footer .address .sitemap ul{
+  display: none;
+  width: 100%;
+  height: 240px;
+  overflow-y: scroll;
+  position: absolute;
+  top: -240px;
+  padding: 0 20px;
+  border: 1px solid #eee;
+  background-color: var(--main-darkGreyColor);
+}
+.bottom-footer .address .sitemap ul li{
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.bottom-footer .address .sitemap ul li a{
+  display: block;
+  text-align: left;
+  line-height: 40px;
+  color: #eee;
+}
+
+/* bottom-footer - rights, sns, mark */
+.bottom-footer .siteinfo::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.bottom-footer .siteinfo p{
+  float: left;
+  font-size: 14px;
+  text-align: left;
+  color: #b6b6b6;
+}
+.bottom-footer .siteinfo .sns-icons{
+  float: right;
+}
+.bottom-footer .siteinfo .sns-icons ul li{
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+.bottom-footer .siteinfo .sns-icons ul li a{
+  display: block;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--main-darkGreyColor);
+}

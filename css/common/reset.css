@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+:root{
+  --main-redColor: #ed1a3b;
+  --main-darkGreyColor: #222222;
+  --main-ligthGreyColor: #686868;
+  --main-blueColor: #052d7b;
+}
+
+/* reset */
+body, header, main, section, article, footer, nav,
+div, p,
+h1, h2, h3, h4, h5, h6,
+ol, ul, li, dl, dd, dt, 
+input, feTile, legend, select, textarea, button, form, figure, figcaption,
+table, th, td, tr{margin: 0; padding: 0;}
+
+*{box-sizing: border-box;}
+
+a{color: #000; text-decoration: none;}
+
+em, address{font-style: normal;}
+ul, li, ol{list-style: none;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+button{border: 0; background: none;}
+
+body{
+  overflow-x: hidden;
+}
+
+/* clearfix */
+.cleafix::before, .clearfix::after{
+  content: '';
+  display: block;
+  line-height: 0;
+}
+.clearfix::after{
+  clear: both;
+}
+
+/* IR */
+.ir_pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ir_wa{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.ir_su{
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -99999px;
+}
