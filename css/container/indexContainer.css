@@ -146,6 +146,9 @@ main section .inner-sec{
 #sec1 .inner-sec{
   padding: 0 10px;
 }
+#sec1 .inner-sec h2{
+  display: none;
+}
 #sec1 .inner-sec p{
   margin-bottom: 15px;
   font-size: 34px;
@@ -158,6 +161,9 @@ main section .inner-sec{
 /* section2 - main banner*/
 #sec2{
   animation: sec1_2Ani 0.3s ease-in;
+}
+#sec2 h2{
+  display: none;
 }
 #sec2 #main-banner{
   width: 100%;
