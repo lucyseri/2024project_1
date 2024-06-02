@@ -195,11 +195,20 @@ footer .inner-footer{
   clear: both;
   display: block;
 }
-.bottom-footer .siteinfo p{
+.bottom-footer .siteinfo .left-box{
+  float: left;
+}
+.bottom-footer .siteinfo .left-box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.bottom-footer .siteinfo .left-box p{
   float: left;
   font-size: 14px;
   text-align: left;
   color: #b6b6b6;
+  margin-right: 10px;
 }
 .bottom-footer .siteinfo .sns-icons{
   float: right;
