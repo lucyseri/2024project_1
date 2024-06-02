@@ -206,6 +206,7 @@ nav .gnb .depth1_ul .depth1_li .lnb{
   right: 0;
   font-size: 25px;
   line-height: 30px;
+  font-family: var(--point-font);
 }
 .lnb .slidedown-con .gnb-title .bar{
   display: block;
@@ -226,6 +227,7 @@ nav .gnb .depth1_ul .depth1_li .lnb{
   right: 0;
   top: 155px;
   font-size: 15px;
+  color: var(--main-ligthGreyColor);
 }
 .lnb .slidedown-con .depth2_ul{
   width: 1200px;
@@ -260,6 +262,7 @@ nav .gnb .depth1_ul .depth1_li .lnb{
   padding: 20px;
   border: 1px solid #999;
   font-size: 18px;
+  font-family: var(--point-font);
   line-height: 30px;
 }
 .lnb .slidedown-con .depth2_ul .depth2_li:hover>a{
@@ -376,7 +379,8 @@ nav .icons ul li a.mobile-navi{
   display: block;
   float: left;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: var(--point-font);
   line-height: 30px;
 }
 .mobile_depth1_ul .mobile_depth1_li .mobile_gnb .arrow{

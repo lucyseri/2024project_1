@@ -27,6 +27,7 @@ main section .inner-sec{
   font-size: 45px;
   font-weight: 700;
   line-height: 54px;
+  font-family: var(--point-font);
   color: var(--main-darkGreyColor);
 }
 .title p{
@@ -39,11 +40,6 @@ main section .inner-sec{
 .slide_btn_off{
   display: none !important;
 }
-/* .slide-controls::after{
-  content: "";
-  clear: both;
-  display: block;
-} */
 .slide-controls button{
   float: left;
   display: block;
@@ -111,7 +107,6 @@ main section .inner-sec{
   background-position: -46px -23px;
 }
 
-
 /* more */
 .more::before{
   content: "";
@@ -119,7 +114,7 @@ main section .inner-sec{
   width: 50px;
   height: 1px;
   position: absolute;
-  right: 44px;
+  right: 55px;
   top: 12px;
   background-color: var(--main-redColor);
 }
@@ -152,10 +147,13 @@ main section .inner-sec{
 #sec1 .inner-sec p{
   margin-bottom: 15px;
   font-size: 34px;
+  font-weight: 300;
+  font-family: var(--point-font);
 }
 #sec1 .inner-sec strong{
   font-size: 55px;
   font-weight: 700;
+  font-family: var(--point-font);
 }
 
 /* section2 - main banner*/
@@ -357,12 +355,16 @@ main section .inner-sec{
 .exhibits-txt p{
   font-size: 20px;
   line-height: 26px;
+  color: var(--main-ligthGreyColor);
 }
 .exhibits-txt p strong{
   display: block;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
+  font-family: var(--point-font);
   margin: 13px 0 17px;
+  color: var(--main-darkGreyColor);
 }
 /* section4 - special exhibits(left con) */
 .special-exhibits .poster{
@@ -432,11 +434,6 @@ main section .inner-sec{
   top: 0;
   left: 0;
 }
-/* .permanent-exhibits .exhibit-img-slide .exhibit-slide-gallery .exhibit-slide-img .exhibit_slide_ul::after{
-  content: "";
-  clear: both;
-  display: block;
-} */
 .permanent-exhibits .exhibit-img-slide .exhibit-slide-gallery .exhibit-slide-img .exhibit_slide_ul .exhibit_slide_li{
   float: left;
   width: 733px;
@@ -464,11 +461,6 @@ main section .inner-sec{
   top: 0;
   left: 0;
 }
-/* .permanent-exhibits .exhibit-txt-slide ul::after{
-  content: "";
-  clear: both;
-  display: block;
-} */
 .permanent-exhibits .exhibit-txt-slide ul li{
   width: 733px;
   height: inherit;
@@ -531,16 +523,13 @@ main section .inner-sec{
   float: left;
   padding: 14px 0;
 }
-/* .sec5-top .title ul::after{
-  content: "";
-  clear: both;
-  display: block;
-} */
 .sec5-top .title ul li{
   float: left;
   position: relative;
   padding: 0 20px;
   font-size: 20px;
+  font-weight: 500;
+  font-family: var(--point-font);
   line-height: 1;
   color: var(--main-ligthGreyColor);
   cursor: pointer;
@@ -634,6 +623,7 @@ main section .inner-sec{
   float: left;
   font-size: 30px;
   font-weight: 700;
+  font-family: var(--point-font);
   line-height: 36px;
 }
 .schedule .schedule-title h3 strong{
@@ -642,6 +632,7 @@ main section .inner-sec{
 .schedule .schedule-title span{
   float: right;
   font-size: 18px;
+  font-family: var(--point-font);
   color: var(--main-ligthGreyColor);
 }
 .schedule .schedule-title span::before{
@@ -667,12 +658,14 @@ main section .inner-sec{
 }
 .schedule .calendar .calendar_ul .calendar_li p.calendar-day{
   font-size: 18px;
+  font-family: var(--point-font);
   line-height: 60px;
   background-color: #ffecef;
   color: var(--main-ligthGreyColor);
 }
 .schedule .calendar .calendar_ul .calendar_li p.calendar-date{
   padding: 10px 0;
+  font-family: var(--point-font);
 }
 .schedule .calendar .calendar_ul .calendar_li p.calendar-date span{
   display: block;
@@ -724,6 +717,7 @@ main section .inner-sec{
   display: block;
   font-size: 30px;
   font-weight: 700;
+  font-family: var(--point-font);
   color: var(--main-darkGreyColor);
 }
 /* sec5-bottom - popup: right con */

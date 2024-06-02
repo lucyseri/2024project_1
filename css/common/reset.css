@@ -5,6 +5,8 @@
   --main-darkGreyColor: #222222;
   --main-ligthGreyColor: #686868;
   --main-blueColor: #052d7b;
+  --main-font: "Noto Sans KR", sans-serif;
+  --point-font: 'GmarketSans';
 }
 
 /* reset */
@@ -26,6 +28,7 @@ button{border: 0; background: none;}
 
 body{
   overflow-x: hidden;
+  font-family: var(--main-font);
 }
 
 /* clearfix */

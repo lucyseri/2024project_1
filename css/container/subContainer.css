@@ -14,6 +14,7 @@ main #sec1{
 /* section1 */
 main #sec1 p{
   font-size: 22px;
+  font-family: var(--point-font);
   line-height: 35px;
   text-align: center;
   color: #fff;
@@ -21,6 +22,7 @@ main #sec1 p{
 main #sec1 h2{
   font-size: 50px;
   font-weight: 700;
+  font-family: var(--point-font);
   line-height: 60px;
   text-align: center;
   color: #fff;
@@ -33,6 +35,7 @@ main #sec1 span{
   bottom: 0;
   right: 0;
   background-color: #ed1a3aa3;
+  font-family: var(--point-font);
 }
 main #sec1 span strong{
   display: block;
@@ -73,6 +76,7 @@ main #sec2 .inner-sec .sec-con{
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
+  font-family: var(--point-font);
 }
 .sec-con .top-title .top-icons{
   padding-bottom: 20px;
@@ -237,6 +241,7 @@ aside{
 aside .aside-lnb .aside_depth2_li{
   width: 100%;
   border-bottom: 1px solid #686868;
+  font-family: var(--point-font);
   color: #666666;
 }
 aside .aside-lnb .aside_depth2_li .depth_2::after{
@@ -332,6 +337,7 @@ aside .side-info .top-txt{
 aside .side-info .top-txt p{
   font-size: 22px;
   font-weight: 700;
+  font-family: var(--point-font);
 }
 aside .side-info .top-txt p span{
   color: var(--main-redColor);
@@ -344,6 +350,7 @@ aside .side-info .middle-txt p.time{
   margin: 5px 0;
   font-size: 27px;
   font-weight: 700;
+  font-family: var(--point-font);
 }
 aside .side-info .middle-txt p.time-txt{
   font-size: 15px;
