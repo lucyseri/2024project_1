@@ -47,6 +47,7 @@ button{border: 0; background: none;}
 body{
   overflow-x: hidden;
   font-family: var(--main-font);
+  background-color: #fff;
 }
 
 /* clearfix */
