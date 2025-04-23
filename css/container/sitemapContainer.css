@@ -1,25 +1,19 @@
-/* layout */
-main{
-  width: 100%;
-  height: auto;
-}
-main #sec1{
+/* section1 */
+.title-banner{
   width: 100%;
   height: 297px;
   position: relative;
   padding-top: 100px;
   background: url("../../img/background.jpeg") center top / cover;
 }
-
-/* section1 */
-main #sec1 p{
+.title-banner p{
   font-size: 22px;
   font-family: var(--point-font);
   line-height: 35px;
   text-align: center;
   color: #fff;
 }
-main #sec1 h2{
+.title-banner h2{
   font-size: 50px;
   font-weight: 700;
   font-family: var(--point-font);
@@ -27,7 +21,7 @@ main #sec1 h2{
   text-align: center;
   color: #fff;
 }
-main #sec1 span{
+.title-banner span{
   display: block;
   width: 656px;
   height: 95px;
@@ -37,72 +31,89 @@ main #sec1 span{
   background-color: #ed1a3aa3;
   font-family: var(--point-font);
 }
-main #sec1 span strong{
+.title-banner span strong{
   display: block;
   width: 336px;
   height: 95px;
-  padding: 0 60px;
   background-color: var(--main-redColor);
   font-size: 24px;
   font-weight: 700;
   line-height: 95px;
+  text-align: center;
   color: #fff;
 }
-
 /* section2 - layout */
-main #sec2{
+main .map-sec{
   width: 100%;
   padding: 47px 0 150px;
 }
-main #sec2 .inner-sec{
+main .map-sec .inner-sec{
   width: 1280px;
   margin: 0 auto;
 }
-main #sec2 .inner-sec::after{
+main .map-sec .inner-sec::after{
   content: "";
   clear: both;
   display: block;
 }
-main #sec2 .inner-sec .sec-con{
+main .map-sec .inner-sec .sec-con{
   width: 940px;
   float: left;
 }
-/* section2 - left con */
-.sec-con .top-title{
+main .map-sec .inner-sec aside{
+  float: right;
+  width: 270px;
+}
+/* section2 - map con */
+.map-sec .top-title{
   padding-bottom: 35px;
 }
-.sec-con .top-title h2{
+.map-sec .top-title h2{
   margin: 7px 0 14px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
   font-family: var(--point-font);
 }
-.sec-con .top-title .top-icons{
+.map-sec .top-title .title-icons{
   padding-bottom: 20px;
-  border-bottom: 2px dashed #666666;
+  border-bottom: 2px dashed #ddd;
 }
-.sec-con .top-title .top-icons::after{
+.map-sec .top-title .title-icons::after{
   display: block;
   content: "";
   clear: both;
 }
-.sec-con .top-title .top-icons ul.left{
+.map-sec .top-title .title-icons ul.bread-crumbs{
   float: left;
 }
-.sec-con .top-title .top-icons ul.left li{
+.map-sec .top-title .title-icons ul.bread-crumbs li{
   float: left;
   margin-right: 5px;
+}
+.map-sec .top-title .title-icons ul.bread-crumbs li i{
+  display: block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+.map-sec .top-title .title-icons ul.bread-crumbs li a{
+  display: block;
+  width: 100%;
+  height: auto;
   font-size: 16px;
   line-height: 24px;
   color: #666666;
 }
-.sec-con .top-title .top-icons ul.left li:last-child{
+.map-sec .top-title .title-icons ul.bread-crumbs li:last-child{
   position: relative;
   margin-left: 25px;
   font-weight: 700;
 }
-.sec-con .top-title .top-icons ul.left li:last-child::before{
+.map-sec .top-title .title-icons ul.bread-crumbs li:last-child::before{
   content: "";
   width: 0;
   height: 0;
@@ -114,28 +125,17 @@ main #sec2 .inner-sec .sec-con{
   border-bottom: 5px solid #66666600;
   border-left: 5px solid #d9d9d9;
 }
-.sec-con .top-title .top-icons ul.left li i{
-  display: block;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-  color: #666666;
-}
-
-.menu-closed{
-  display: none !important;
-}
-.sec-con .top-title .top-icons ul.right{
+.map-sec .top-title .title-icons ul.button-box{
   float: right;
 }
-.sec-con .top-title .top-icons ul.right li{
+.map-sec .top-title .title-icons ul.button-box>li{
   width: 40px;
   float: left;
+  text-align: center;
   position: relative;
+  cursor: pointer;
 }
-.sec-con .top-title .top-icons ul.right>li:not(:first-child)::after{
+.map-sec .top-title .title-icons ul.button-box>li:not(:first-child)::before{
   content: "";
   display: block;
   width: 1px;
@@ -146,7 +146,7 @@ main #sec2 .inner-sec .sec-con{
   transform: translateY(-50%);
   background-color: #666666;
 }
-.sec-con .top-title .top-icons ul.right li i{
+.map-sec .top-title .title-icons ul.button-box>li i{
   display: block;
   width: 100%;
   font-size: 16px;
@@ -154,18 +154,18 @@ main #sec2 .inner-sec .sec-con{
   line-height: 30px;
   color: #666666;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child{
-  position: relative;
+.map-sec .top-title .title-icons ul.button-box>li ul.sns-list.menu-closed{
+  display: none !important;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child ul.sub{
-  /* display: none; */
+.map-sec .top-title .title-icons ul.button-box li.share-btn ul.sns-list{
+  display: block;
   position: absolute;
   bottom: -65px;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #666;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child ul.sub::before{
+.map-sec .top-title .title-icons ul.button-box li.share-btn ul.sns-list::before{
   content: "";
   width: 0;
   height: 0;
@@ -177,7 +177,7 @@ main #sec2 .inner-sec .sec-con{
   border-left: 6px solid #ffffff00;
   border-right: 6px solid #ffffff00;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child ul.sub::after{
+.map-sec .top-title .title-icons ul.button-box li.share-btn ul.sns-list::after{
   content: "";
   width: 0;
   height: 0;
@@ -190,149 +190,163 @@ main #sec2 .inner-sec .sec-con{
   border-left: 5px solid #ffffff00;
   border-right: 5px solid #ffffff00;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child ul.sub li{
+.map-sec .top-title .title-icons ul.button-box li.share-btn ul.sns-list li{
   width: 30px;
   height: 30px;
   background-color: #fff;
   cursor: pointer;
 }
-.sec-con .top-title .top-icons ul.right>li:first-child ul.sub li i{
+.map-sec .top-title .title-icons ul.button-box li.share-btn ul.sns-list li i{
   font-size: 14px;
 }
-/* section2 - left - tble */
-table{
+/* section2 - map table */
+table.site-map{
   display: block;
   width: 100%;
   height: auto;
-  border-top: 2px solid #666;
+  border-top: 2px solid #9aa2ac;
   table-layout: fixed;
 }
-table tbody{
+table.site-map tbody{
   display: block;
   width: 100%;
   height: auto;
 }
-table tr{
+table.site-map tr{
   display: block;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #ddd;
 }
-table tr::after{
+table.site-map tr::after{
   content: "";
   clear: both;
   display: block;
 }
-table tr th{
+table.site-map tr th{
   display: block;
   float: left;
   width: 168px;
   padding: 10px 15px;
   margin: 0;
   text-align: left;
+  font-size: 18px;
 }
-table tr td{
+table.site-map tr td{
   margin: 0;
   float: left;
   display: block;
   width: calc(100% - 168px);
   height: auto;
   padding: 23px 23px 30px;
-  border-left: 1px solid #666;
-  font-size: 18px;
+  border-left: 1px solid #ddd;
 }
-table tr td ul.td_depth2_ul::after{
+table.site-map tr td ul.td_depth2_ul::after{
   display: block;
   content: "";
   clear: both;
 }
-table tr td ul.td_depth2_ul>li{
+table.site-map tr td ul.td_depth2_ul>li{
   float: left;
   width: 23%;
   margin: 0 1%;
-  list-style: disc;
 }
-table tr td ul.td_depth2_ul>li::marker{
-  color: #666;
-}
-table tr td ul.td_depth2_ul>li>a{
+table.site-map tr td ul.td_depth2_ul>li>a{
   font-size: 14px;
   line-height: 22px;
+  position: relative;
+  padding: 0 0 0 10px;
+  color: #666;
 }
-table tr td ul.td_depth2_ul>li ul.td_depth3_ul li a{
+table.site-map tr td ul.td_depth2_ul>li>a::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #9aa2ac;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+table.site-map tr td ul.td_depth2_ul>li ul.td_depth3_ul{
+  margin-left: 8px;
+}
+table.site-map tr td ul.td_depth2_ul>li ul.td_depth3_ul li a{
   font-size: 13px;
+  color: #666;
 }
-/* section2 - left - stisfaction research */
-.satisfaction-form{
+/* section2 - stisfaction research */
+.satisfaction-box{
   width: 100%;
   padding-top: 100px;
 }
-.satisfaction-form form{
+.satisfaction-box form{
   display: block;
   width: 100%;
   height: auto;
   border: 1px solid #ececec;
   padding: 15px 25px;
 }
-.satisfaction-form form p{
+.satisfaction-box form p{
   font-size: 15px;
   line-height: 30px;
 }
-.satisfaction-form form fieldset{
-  display: block;
+.satisfaction-box form fieldset{
   border: none;
 }
-.satisfaction-form form fieldset::after{
-  content: "";
-  clear: both;
-  display: block;
+.satisfaction-box form fieldset legend{
+  font-size: 0;
+  line-height: 0;
 }
-.satisfaction-form form fieldset legend{
-  visibility: hidden;
-}
-.satisfaction-form form fieldset label{
+.satisfaction-box form fieldset label{
   display: block;
-  /* width: 40px; */
-  /* height: auto; */
-  font-size: 16px;
+  font-size: 13px;
   float: left;
   margin-right: 20px;
 }
-.satisfaction-form form fieldset .short_answer label{
-  visibility: hidden;
+.satisfaction-box form fieldset input[type = "radio"]{
+  margin-right: 10px;
 }
-.satisfaction-form form fieldset .short_answer input{
+.satisfaction-box form fieldset .short-answer label{
+  font-size: 0;
+  line-height: 0;
+}
+.satisfaction-box form fieldset .short-answer input{
   width: 300px;
   height: 26px;
-  padding: 0 5px;
+  border-radius: 0;
+  border: 1px solid #ddd;
 }
-.satisfaction-form form fieldset .short_answer input:focus{
+.satisfaction-box form fieldset .short-answer input:focus{
   outline: none;
 }
-.satisfaction-form form fieldset .short_answer button{
+.satisfaction-box form fieldset .short-answer button{
   width: 88px;
   height: 26px;
   background-color: #2f71d2;
   font-size: 14px;
   line-height: 26px;
   color: #fff;
+  margin-left: -10px;
 }
-
-/* section2 - aside - lnb */
-aside{
-  float: right;
-  width: 270px;
-}
+/* section2 - aside lnb */
 aside .aside-lnb li{
   width: 100%;
   padding: 0 15px 0 25px;
   background-color: #fff;
-  border-bottom: 1px solid #686868;
+  border-bottom: 1px solid #ddd;
   color: #666666;
 }
+aside .aside-lnb li:hover{
+  border-bottom: 1px solid var(--main-blueColor);
+  background-color: var(--main-blueColor);
+  color: #fff;
+}
 aside .aside-lnb li:first-child{
+  border-bottom: 1px solid var(--main-blueColor);
   background-color: var(--main-blueColor);
   color: #fff;
 }
@@ -366,39 +380,44 @@ aside .aside-lnb li span.aside-lnb-arrow i{
 aside .aside-lnb li:first-child span.aside-lnb-arrow i{
   color: #fff;
 }
-/* section2 - aside - info */
+aside .aside-lnb li:hover span.aside-lnb-arrow i{
+  color: #fff;
+}
 aside .side-info{
   padding: 22px 35px;
   margin-top: 52px;
   border: 1px solid #dddddd;
   background-color: #fff;
 }
-aside .side-info .top-txt{
+aside .side-info .title-txt{
   padding: 12px 0 6px;
   border-bottom: 1px solid #dddddd;
 }
-aside .side-info .top-txt p{
+aside .side-info .title-txt p{
   font-size: 22px;
   font-weight: 700;
   font-family: var(--point-font);
 }
-aside .side-info .top-txt p span{
+aside .side-info .title-txt p span{
   color: var(--main-redColor);
 }
-aside .side-info .middle-txt{
+aside .side-info .time-box{
   padding: 20px 0;
   font-size: 14px;
 }
-aside .side-info .middle-txt p.time{
-  margin: 5px 0;
+aside .side-info .time-box p.time{
   font-size: 27px;
   font-weight: 700;
   font-family: var(--point-font);
 }
-aside .side-info .middle-txt p.time-txt{
-  font-size: 15px;
+aside .side-info .time-box p.time-txt{
+  font-size: 14px;
+  font-weight: 700;
 }
-aside .side-info .bottom-txt{
+aside .side-info .closed-day-box{
   font-size: 14px;
   color: #222;
+}
+aside .side-info .closed-day-box .closed-day-title{
+  font-weight: 700;
 }

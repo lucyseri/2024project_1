@@ -1,91 +1,115 @@
 footer{
-  background-color: var(--main-darkGreyColor);
+  background-color: #282930;
 }
-
 /* layout */
 footer .inner-footer{
-  width: 1360px;
+  width: 1400px;
+  padding: 0 20px;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
 }
-
 /* footer - top-footer */
 .top-footer{
   width: 100%;
   height: 90px;
-  background-color: var(--main-darkGreyColor);
-  padding: 0 10px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #4B4B50;
+  color: #fff;
+  background-color: #282930;
+  position: relative;
 }
-.top-footer ul::after{
+.top-footer .inner-footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.top-footer .nav-label{
+  width: 155px;
+  float: left;
+  color: inherit;
+  font-family: var(--point-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 37px;
+  padding: 26px 0;
+  position: relative;
+  text-align: left;
+}
+.top-footer .nav-label::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../../img/footer-arrow.svg") no-repeat center / cover;
+}
+.top-footer ul.footer-nav{
+  width: calc(100% - 200px);
+  float: right;
+}
+.top-footer ul.footer-nav::after{
   content: "";
   clear: both;
   display: block;
 }
-.top-footer ul li{
+.top-footer ul.footer-nav li{
+  width: 20%;
   float: left;
   position: relative;
-  padding: 26px 4.5% 26px 0;
+  padding: 26px 0;
   line-height: 37px;
+  text-align: center;
 }
-.top-footer ul li:first-child{
-  font-family: var(--point-font);
-}
-.top-footer ul li a{
-  display: block;
-  float: left;
+.top-footer ul.footer-nav li a{
+  display: inline-block;
   height: 37px;
   line-height: 37px;
+  text-align: center;
   color: inherit;
+  vertical-align: top;
 }
-.top-footer ul li::after{
+.top-footer ul.footer-nav li::after{
   content: "";
   width: 0;
   height: 5px;
   position: absolute;
   bottom: 0;
-  left: 26px;
+  left: 0;
   background-color: var(--main-redColor);
   transition: all 0.3s ease-in;
 }
-.top-footer ul li:hover::after{
+.top-footer ul.footer-nav li:hover::after{
   content: "";
-  width: 70%;
+  width: 100%;
 }
-.top-footer ul li:nth-child(1){
-  border-right: 1px solid #eee;
-  font-size: 18px;
-  font-weight: 700;
-}
-.top-footer ul li span{
-  display: block;
-  float: left;
+.top-footer ul.footer-nav li span.icon{
+  display: inline-block;
   width: 37px;
   height: 37px;
-  margin: 0 20px;
+  vertical-align: top;
+  margin-right: 8px;
 }
-.top-footer .inner-footer ul li:nth-child(2) span{
+.top-footer .inner-footer ul.footer-nav li:nth-child(1) span{
   background: url("../../img/landmark.svg") no-repeat center;
 }
-.top-footer .inner-footer ul li:nth-child(3) span{
+.top-footer .inner-footer ul.footer-nav li:nth-child(2) span{
   background: url("../../img/education.svg") no-repeat center;
 }
-.top-footer .inner-footer ul li:nth-child(4) span{
+.top-footer .inner-footer ul.footer-nav li:nth-child(3) span{
   background: url("../../img/horn.svg") no-repeat center;
 }
-.top-footer .inner-footer ul li:nth-child(5) span{
+.top-footer .inner-footer ul.footer-nav li:nth-child(4) span{
   background: url("../../img/child.svg") no-repeat center;
 }
-.top-footer .inner-footer ul li:nth-child(6) span{
+.top-footer .inner-footer ul.footer-nav li:nth-child(5) span{
   background: url("../../img/digital.svg") no-repeat center;
 }
-
 /* bottom-footer */
 .bottom-footer{
   padding: 50px 10px 30px;
 }
-/* bottom-footer - policy*/
 .bottom-footer ul.policies::after {
   content: "";
   clear: both;
@@ -100,73 +124,69 @@ footer .inner-footer{
 }
 .bottom-footer ul.policies li a{
   position: relative;
-  padding-right: 60px;
+  margin-right: 60px;
   font-size: 14px;
   line-height: 20px;
   color: inherit;
 }
-.bottom-footer ul.policies li:not(:nth-child(6)) a::after{
+.bottom-footer ul.policies li:not(:last-child) a::after{
   content: "";
   display: block;
   width: 1px;
   height: 11px;
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: -30px;
   transform: translateY(-50%);
   background-color: #eee;
 }
-/* bottom-footer - address*/
-.bottom-footer .address{
+.bottom-footer .address-box{
+  width: 100%;
   margin: 37px 0 26px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
-.bottom-footer .address::after{
+.bottom-footer .address-box::after{
   content: "";
   clear: both;
   display: block;
 }
-.bottom-footer .address address{
+.bottom-footer .address-box address{
   float: left;
   width: 70%;
+  height: 80px;
   font-size: 16px;
   line-height: 80px;
   text-align: left;
   color: #eee;
 }
-.bottom-footer .address .sitemap{
-  float: left;
+.bottom-footer .address-box .other-site{
+  float: right;
   width: 30%;
+  height: 80px;
   position: relative;
   border-left: 1px solid #eee;
 }
-.bottom-footer .address .sitemap span{
+.bottom-footer .address-box .other-site button{
   display: block;
-  float: left;
-  width: 250px;
-  height: 80px;
+  width: 100%;
+  height: inherit;
   padding: 0 40px;
   font-size: 16px;
   line-height: 80px;
   text-align: left;
   color: #eee;
-}
-.bottom-footer .address .sitemap button{
-  float: right;
-  display: block;
-  padding: 25px 40px;
   cursor: pointer;
+  border: 0;
+  background-image: url("../../img/site-down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right 24px center;
 }
-.family-site-off{
-  display: none !important;
+.bottom-footer .address-box .other-site button.menu-on{
+  background-image: url("../../img/site-up-arrow.svg");
 }
-.bottom-footer .address .sitemap button i{
-  font-size: 16px;
-  line-height: 30px;
-  color: #eee;
-}
-.bottom-footer .address .sitemap ul{
+.bottom-footer .address-box .other-site ul{
   display: none;
   width: 100%;
   height: 240px;
@@ -175,14 +195,14 @@ footer .inner-footer{
   top: -240px;
   padding: 0 20px;
   border: 1px solid #eee;
-  background-color: var(--main-darkGreyColor);
+  background-color: #282930;
 }
-.bottom-footer .address .sitemap ul li{
+.bottom-footer .address-box .other-site ul li{
   padding: 5px;
   border-bottom: 1px solid #eee;
   text-align: left;
 }
-.bottom-footer .address .sitemap ul li a{
+.bottom-footer .address-box .other-site ul li a{
   display: block;
   text-align: left;
   line-height: 40px;
