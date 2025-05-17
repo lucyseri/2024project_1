@@ -290,13 +290,13 @@ function boardTitleFn(e){
 let month = new Date().getMonth();
 let year = new Date().getFullYear();
 let date = new Date().getDate();
-let currentMonthFirstDate = new Date(year, month, 1).getDay();
-let lastMonthLastDay = new Date(year, month, 0);
+let currentMonthFirstDay = new Date(year, month, 1).getDay();
+let lastMonthLastDate = new Date(year, month, 0).getDate();
 let currentMonthLastDay = new Date(year, month+1, 0);
 let firstDay = new Date(year,month,1).getDay();
 let currentMonthDays = [];
-for(let i = 0; i<currentMonthFirstDate;i++){
-  currentMonthDays.push(lastMonthLastDay.getDate() - i);
+for(let i = 0; i<currentMonthFirstDay;i++){
+  currentMonthDays.push(lastMonthLastDate - (currentMonthFirstDay-1-i));
 };
 for(let i = 0; i<currentMonthLastDay.getDate();i++){
   currentMonthDays.push(i+1);
@@ -304,14 +304,15 @@ for(let i = 0; i<currentMonthLastDay.getDate();i++){
 for(let i = 0;i<6-currentMonthLastDay.getDay();i++){
   currentMonthDays.push(i+1);
 };
-// let fourWeeksDays = currentMonthDays.splice(0,28);
 currentMonthDays.forEach((el, idx)=>{
   if(el == date){
-    const weekStart = parseInt(idx / 7)+1;
-    weekNum.innerText = `${month+1}월 ${weekStart}주차`;
-    for(let i = 0; i<currentWeekDates.length;i++){
-      currentWeekDates[i].firstElementChild.innerText = (weekStart-1)*7+i-1;
-    };
+    if(idx >= 7){
+      const weekStart = parseInt(idx / 7)+1;
+      weekNum.innerText = `${month+1}월 ${weekStart}주차`;
+      for(let i = 0; i<currentWeekDates.length;i++){
+        currentWeekDates[i].firstElementChild.innerText = currentMonthDays[(weekStart-1)*7+i];
+      };
+    }
   };
 });
 //section5: fade gallery
