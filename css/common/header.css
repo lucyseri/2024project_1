@@ -1,5 +1,3 @@
-header{
-}
 /*top-header*/
 .top-header{
   background-color: var(--main-darkGreyColor);
@@ -180,6 +178,7 @@ header{
   color: var(--main-ligthGreyColor);
   float: right;
   opacity: 0;
+  word-break: keep-all;
 }
 .bottom-header nav .gnb ul.depth1-ul li.depth1-li:hover .lnb .lnb-title p.lnb-title-txt{
   opacity: 1;
